@@ -1,0 +1,12 @@
+STUFF USED :::
+     
+YT vid on creating a local DB:     	https://www.youtube.com/watch?v=eaAb-V7Of-4
+
+Displaying info from a DB (Nearly):	https://stackoverflow.com/questions/22710938/display-data-in-a-label-in-c-sharp
+
+Adding @ to a connection string :  	https://stackoverflow.com/questions/1302864/unrecognized-escape-sequence-for-path-string-containing-backslashes
+
+Showing the DB info on a label :   	https://www.c-sharpcorner.com/blogs/display-data-from-database-to-label1
+
+
+
