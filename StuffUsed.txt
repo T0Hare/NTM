@@ -8,5 +8,14 @@ Adding @ to a connection string :  	https://stackoverflow.com/questions/1302864/
 
 Showing the DB info on a label :   	https://www.c-sharpcorner.com/blogs/display-data-from-database-to-label1
 
+Reading all the lines in a file :       https://stackoverflow.com/questions/119559/determine-the-number-of-lines-within-a-text-file
 
+Removing letters from a string :        https://stackoverflow.com/questions/15564944/remove-the-last-three-characters-from-a-string
+ 
+Showing the filename of a selected 
+file                              :	https://social.msdn.microsoft.com/Forums/vstudio/en-US/50d7d115-15ee-4c0e-a0b1-ef997b7b9030/openfiledialog-splitting-the-file-path-and-name?forum=csharpgeneral
+
+Timer creation and showing on a label : https://stackoverflow.com/questions/19960438/timer-updating-label
+
+Reseting a timer :                      https://stackoverflow.com/questions/9282755/how-to-make-a-timer-restart
 
