@@ -28,7 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.components = new System.ComponentModel.Container();
+            this.QuestionBox = new System.Windows.Forms.PictureBox();
             this.QuizNameLBL = new System.Windows.Forms.Label();
             this.TimeLeftLBL = new System.Windows.Forms.Label();
             this.CheckBUT = new System.Windows.Forms.Button();
@@ -41,16 +42,20 @@
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.listBox3 = new System.Windows.Forms.ListBox();
             this.listBox4 = new System.Windows.Forms.ListBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.Timecountdown = new System.Windows.Forms.Label();
+            this.Timer = new System.Windows.Forms.Timer(this.components);
+            this.RightWrongDisplay = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.QuestionBox)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // QuestionBox
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(12, 54);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(519, 368);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.QuestionBox.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.QuestionBox.Location = new System.Drawing.Point(12, 54);
+            this.QuestionBox.Name = "QuestionBox";
+            this.QuestionBox.Size = new System.Drawing.Size(519, 368);
+            this.QuestionBox.TabIndex = 0;
+            this.QuestionBox.TabStop = false;
             // 
             // QuizNameLBL
             // 
@@ -85,6 +90,7 @@
             this.CheckBUT.TabIndex = 56;
             this.CheckBUT.Text = "Check";
             this.CheckBUT.UseVisualStyleBackColor = false;
+            this.CheckBUT.Click += new System.EventHandler(this.CheckBUT_Click);
             // 
             // CustomQbox
             // 
@@ -184,12 +190,34 @@
             this.listBox4.TabIndex = 85;
             this.listBox4.Visible = false;
             // 
+            // Timecountdown
+            // 
+            this.Timecountdown.AutoSize = true;
+            this.Timecountdown.Font = new System.Drawing.Font("Lucida Console", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Timecountdown.Location = new System.Drawing.Point(789, 389);
+            this.Timecountdown.Name = "Timecountdown";
+            this.Timecountdown.Size = new System.Drawing.Size(36, 33);
+            this.Timecountdown.TabIndex = 86;
+            this.Timecountdown.Text = "-";
+            // 
+            // RightWrongDisplay
+            // 
+            this.RightWrongDisplay.AutoSize = true;
+            this.RightWrongDisplay.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RightWrongDisplay.Location = new System.Drawing.Point(12, 528);
+            this.RightWrongDisplay.Name = "RightWrongDisplay";
+            this.RightWrongDisplay.Size = new System.Drawing.Size(19, 16);
+            this.RightWrongDisplay.TabIndex = 87;
+            this.RightWrongDisplay.Text = "-";
+            // 
             // QuizPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleTurquoise;
             this.ClientSize = new System.Drawing.Size(928, 578);
+            this.Controls.Add(this.RightWrongDisplay);
+            this.Controls.Add(this.Timecountdown);
             this.Controls.Add(this.listBox4);
             this.Controls.Add(this.listBox3);
             this.Controls.Add(this.listBox2);
@@ -202,10 +230,13 @@
             this.Controls.Add(this.CheckBUT);
             this.Controls.Add(this.TimeLeftLBL);
             this.Controls.Add(this.QuizNameLBL);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.QuestionBox);
             this.Name = "QuizPage";
             this.Text = "QuizPage";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.QuizPage_FormClosed);
+            this.Load += new System.EventHandler(this.QuizPage_Load);
+            this.Shown += new System.EventHandler(this.QuizPage_Shown);
+            ((System.ComponentModel.ISupportInitialize)(this.QuestionBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -213,7 +244,7 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox QuestionBox;
         private System.Windows.Forms.Label QuizNameLBL;
         private System.Windows.Forms.Label TimeLeftLBL;
         private System.Windows.Forms.Button CheckBUT;
@@ -226,5 +257,8 @@
         private System.Windows.Forms.ListBox listBox2;
         private System.Windows.Forms.ListBox listBox3;
         private System.Windows.Forms.ListBox listBox4;
+        private System.Windows.Forms.Label Timecountdown;
+        private System.Windows.Forms.Timer Timer;
+        private System.Windows.Forms.Label RightWrongDisplay;
     }
 }

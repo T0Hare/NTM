@@ -38,7 +38,7 @@
             this.COOHBUT = new System.Windows.Forms.Button();
             this.EstersBUT = new System.Windows.Forms.Button();
             this.SimpMolLBL = new System.Windows.Forms.Label();
-            this.Reactions = new System.Windows.Forms.Button();
+            this.ReactionsBUT = new System.Windows.Forms.Button();
             this.ReactionsLBL = new System.Windows.Forms.Label();
             this.PandGtrendLBL = new System.Windows.Forms.Label();
             this.G2BUT = new System.Windows.Forms.Button();
@@ -52,6 +52,7 @@
             this.AdvMolLBL = new System.Windows.Forms.Label();
             this.RegularQuizes = new System.Windows.Forms.Panel();
             this.CustomQuizes = new System.Windows.Forms.Panel();
+            this.CustomGOBUT = new System.Windows.Forms.Button();
             this.MYOQLBL = new System.Windows.Forms.Button();
             this.CusQuizDivider = new System.Windows.Forms.Label();
             this.CustomIntroLBL = new System.Windows.Forms.Label();
@@ -60,7 +61,7 @@
             this.CustomQresultLBL = new System.Windows.Forms.Label();
             this.PastQuizes = new System.Windows.Forms.Panel();
             this.QStreakLBL = new System.Windows.Forms.Label();
-            this.PastQListLBL = new System.Windows.Forms.Label();
+            this.PastQListLBL1 = new System.Windows.Forms.Label();
             this.PastQuizIntro = new System.Windows.Forms.Label();
             this.GeneratedQuizes = new System.Windows.Forms.Panel();
             this.PastQuizResultLBL = new System.Windows.Forms.Label();
@@ -73,6 +74,10 @@
             this.EnterMultiResponceBUT = new System.Windows.Forms.Label();
             this.EnterMultiBUT = new System.Windows.Forms.Button();
             this.MultiplayerIntroBUT = new System.Windows.Forms.Label();
+            this.PastQListLBL2 = new System.Windows.Forms.Label();
+            this.PastQListLBL3 = new System.Windows.Forms.Label();
+            this.PastQListLBL4 = new System.Windows.Forms.Label();
+            this.PastQListLBL5 = new System.Windows.Forms.Label();
             this.AdvancedQuizes.SuspendLayout();
             this.RegularQuizes.SuspendLayout();
             this.CustomQuizes.SuspendLayout();
@@ -160,7 +165,7 @@
             this.AldehydesBUT.TabIndex = 57;
             this.AldehydesBUT.Text = "Aldehydes";
             this.AldehydesBUT.UseVisualStyleBackColor = false;
-            this.AldehydesBUT.Click += new System.EventHandler(this.button3_Click);
+            this.AldehydesBUT.Click += new System.EventHandler(this.Button3_Click);
             // 
             // KetonesBUT
             // 
@@ -216,20 +221,20 @@
             this.SimpMolLBL.TabIndex = 61;
             this.SimpMolLBL.Text = "Simple molecules :";
             // 
-            // Reactions
+            // ReactionsBUT
             // 
-            this.Reactions.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.Reactions.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.Reactions.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Reactions.Font = new System.Drawing.Font("Lucida Console", 15F);
-            this.Reactions.ForeColor = System.Drawing.Color.White;
-            this.Reactions.Location = new System.Drawing.Point(163, 108);
-            this.Reactions.Name = "Reactions";
-            this.Reactions.Size = new System.Drawing.Size(133, 32);
-            this.Reactions.TabIndex = 67;
-            this.Reactions.Text = "ReactionsBUT";
-            this.Reactions.UseVisualStyleBackColor = false;
-            this.Reactions.Click += new System.EventHandler(this.Reactions_Click);
+            this.ReactionsBUT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.ReactionsBUT.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.ReactionsBUT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ReactionsBUT.Font = new System.Drawing.Font("Lucida Console", 15F);
+            this.ReactionsBUT.ForeColor = System.Drawing.Color.White;
+            this.ReactionsBUT.Location = new System.Drawing.Point(163, 108);
+            this.ReactionsBUT.Name = "ReactionsBUT";
+            this.ReactionsBUT.Size = new System.Drawing.Size(133, 32);
+            this.ReactionsBUT.TabIndex = 67;
+            this.ReactionsBUT.Text = "ReactionsBUT";
+            this.ReactionsBUT.UseVisualStyleBackColor = false;
+            this.ReactionsBUT.Click += new System.EventHandler(this.Reactions_Click);
             // 
             // ReactionsLBL
             // 
@@ -380,7 +385,7 @@
             this.RegularQuizes.Controls.Add(this.NormQuizLabel);
             this.RegularQuizes.Controls.Add(this.PandGtrendLBL);
             this.RegularQuizes.Controls.Add(this.ReactionsLBL);
-            this.RegularQuizes.Controls.Add(this.Reactions);
+            this.RegularQuizes.Controls.Add(this.ReactionsBUT);
             this.RegularQuizes.Controls.Add(this.SimpMolLBL);
             this.RegularQuizes.Controls.Add(this.COOHBUT);
             this.RegularQuizes.Controls.Add(this.KetonesBUT);
@@ -397,6 +402,7 @@
             // 
             this.CustomQuizes.BackColor = System.Drawing.SystemColors.Highlight;
             this.CustomQuizes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CustomQuizes.Controls.Add(this.CustomGOBUT);
             this.CustomQuizes.Controls.Add(this.MYOQLBL);
             this.CustomQuizes.Controls.Add(this.CusQuizDivider);
             this.CustomQuizes.Controls.Add(this.CustomIntroLBL);
@@ -407,6 +413,21 @@
             this.CustomQuizes.Name = "CustomQuizes";
             this.CustomQuizes.Size = new System.Drawing.Size(651, 179);
             this.CustomQuizes.TabIndex = 78;
+            // 
+            // CustomGOBUT
+            // 
+            this.CustomGOBUT.BackColor = System.Drawing.Color.SlateBlue;
+            this.CustomGOBUT.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.CustomGOBUT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CustomGOBUT.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Bold);
+            this.CustomGOBUT.ForeColor = System.Drawing.Color.White;
+            this.CustomGOBUT.Location = new System.Drawing.Point(280, 133);
+            this.CustomGOBUT.Name = "CustomGOBUT";
+            this.CustomGOBUT.Size = new System.Drawing.Size(78, 35);
+            this.CustomGOBUT.TabIndex = 82;
+            this.CustomGOBUT.Text = "Go!";
+            this.CustomGOBUT.UseVisualStyleBackColor = false;
+            this.CustomGOBUT.Click += new System.EventHandler(this.CustomGOBUT_Click);
             // 
             // MYOQLBL
             // 
@@ -441,7 +462,7 @@
             this.CustomIntroLBL.Name = "CustomIntroLBL";
             this.CustomIntroLBL.Size = new System.Drawing.Size(353, 35);
             this.CustomIntroLBL.TabIndex = 77;
-            this.CustomIntroLBL.Text = "Enter the name of your quiz here :";
+            this.CustomIntroLBL.Text = "Enter the code of your quiz here :";
             // 
             // CustomQbox
             // 
@@ -481,8 +502,12 @@
             // 
             this.PastQuizes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.PastQuizes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PastQuizes.Controls.Add(this.PastQListLBL5);
+            this.PastQuizes.Controls.Add(this.PastQListLBL4);
+            this.PastQuizes.Controls.Add(this.PastQListLBL3);
+            this.PastQuizes.Controls.Add(this.PastQListLBL2);
             this.PastQuizes.Controls.Add(this.QStreakLBL);
-            this.PastQuizes.Controls.Add(this.PastQListLBL);
+            this.PastQuizes.Controls.Add(this.PastQListLBL1);
             this.PastQuizes.Controls.Add(this.PastQuizIntro);
             this.PastQuizes.Location = new System.Drawing.Point(12, 489);
             this.PastQuizes.Name = "PastQuizes";
@@ -494,22 +519,22 @@
             this.QStreakLBL.AutoSize = true;
             this.QStreakLBL.Font = new System.Drawing.Font("Lucida Console", 15F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
             this.QStreakLBL.ForeColor = System.Drawing.Color.White;
-            this.QStreakLBL.Location = new System.Drawing.Point(242, 8);
+            this.QStreakLBL.Location = new System.Drawing.Point(242, 13);
             this.QStreakLBL.Name = "QStreakLBL";
             this.QStreakLBL.Size = new System.Drawing.Size(178, 20);
             this.QStreakLBL.TabIndex = 77;
             this.QStreakLBL.Text = "Quiz Streak :";
             // 
-            // PastQListLBL
+            // PastQListLBL1
             // 
-            this.PastQListLBL.Font = new System.Drawing.Font("Lucida Console", 15F, System.Drawing.FontStyle.Bold);
-            this.PastQListLBL.ForeColor = System.Drawing.Color.White;
-            this.PastQListLBL.Location = new System.Drawing.Point(5, 46);
-            this.PastQListLBL.Name = "PastQListLBL";
-            this.PastQListLBL.Size = new System.Drawing.Size(495, 74);
-            this.PastQListLBL.TabIndex = 76;
-            this.PastQListLBL.Text = "_ _ _";
-            this.PastQListLBL.Visible = false;
+            this.PastQListLBL1.Font = new System.Drawing.Font("Lucida Console", 15F, System.Drawing.FontStyle.Bold);
+            this.PastQListLBL1.ForeColor = System.Drawing.Color.White;
+            this.PastQListLBL1.Location = new System.Drawing.Point(5, 46);
+            this.PastQListLBL1.Name = "PastQListLBL1";
+            this.PastQListLBL1.Size = new System.Drawing.Size(132, 35);
+            this.PastQListLBL1.TabIndex = 76;
+            this.PastQListLBL1.Text = "_ _ _";
+            this.PastQListLBL1.Visible = false;
             // 
             // PastQuizIntro
             // 
@@ -650,7 +675,6 @@
             this.EnterMultiBUT.TabIndex = 81;
             this.EnterMultiBUT.Text = "Play!";
             this.EnterMultiBUT.UseVisualStyleBackColor = false;
-            this.EnterMultiBUT.Click += new System.EventHandler(this.EnterMultiBUT_Click);
             // 
             // MultiplayerIntroBUT
             // 
@@ -662,6 +686,50 @@
             this.MultiplayerIntroBUT.Size = new System.Drawing.Size(140, 18);
             this.MultiplayerIntroBUT.TabIndex = 72;
             this.MultiplayerIntroBUT.Text = "Multiplayer";
+            // 
+            // PastQListLBL2
+            // 
+            this.PastQListLBL2.Font = new System.Drawing.Font("Lucida Console", 15F, System.Drawing.FontStyle.Bold);
+            this.PastQListLBL2.ForeColor = System.Drawing.Color.White;
+            this.PastQListLBL2.Location = new System.Drawing.Point(159, 46);
+            this.PastQListLBL2.Name = "PastQListLBL2";
+            this.PastQListLBL2.Size = new System.Drawing.Size(132, 35);
+            this.PastQListLBL2.TabIndex = 78;
+            this.PastQListLBL2.Text = "_ _ _";
+            this.PastQListLBL2.Visible = false;
+            // 
+            // PastQListLBL3
+            // 
+            this.PastQListLBL3.Font = new System.Drawing.Font("Lucida Console", 15F, System.Drawing.FontStyle.Bold);
+            this.PastQListLBL3.ForeColor = System.Drawing.Color.White;
+            this.PastQListLBL3.Location = new System.Drawing.Point(297, 46);
+            this.PastQListLBL3.Name = "PastQListLBL3";
+            this.PastQListLBL3.Size = new System.Drawing.Size(132, 35);
+            this.PastQListLBL3.TabIndex = 79;
+            this.PastQListLBL3.Text = "_ _ _";
+            this.PastQListLBL3.Visible = false;
+            // 
+            // PastQListLBL4
+            // 
+            this.PastQListLBL4.Font = new System.Drawing.Font("Lucida Console", 15F, System.Drawing.FontStyle.Bold);
+            this.PastQListLBL4.ForeColor = System.Drawing.Color.White;
+            this.PastQListLBL4.Location = new System.Drawing.Point(5, 89);
+            this.PastQListLBL4.Name = "PastQListLBL4";
+            this.PastQListLBL4.Size = new System.Drawing.Size(132, 35);
+            this.PastQListLBL4.TabIndex = 80;
+            this.PastQListLBL4.Text = "_ _ _";
+            this.PastQListLBL4.Visible = false;
+            // 
+            // PastQListLBL5
+            // 
+            this.PastQListLBL5.Font = new System.Drawing.Font("Lucida Console", 15F, System.Drawing.FontStyle.Bold);
+            this.PastQListLBL5.ForeColor = System.Drawing.Color.White;
+            this.PastQListLBL5.Location = new System.Drawing.Point(159, 89);
+            this.PastQListLBL5.Name = "PastQListLBL5";
+            this.PastQListLBL5.Size = new System.Drawing.Size(132, 35);
+            this.PastQListLBL5.TabIndex = 81;
+            this.PastQListLBL5.Text = "_ _ _";
+            this.PastQListLBL5.Visible = false;
             // 
             // Homepage
             // 
@@ -709,7 +777,7 @@
         private System.Windows.Forms.Button COOHBUT;
         private System.Windows.Forms.Button EstersBUT;
         private System.Windows.Forms.Label SimpMolLBL;
-        private System.Windows.Forms.Button Reactions;
+        private System.Windows.Forms.Button ReactionsBUT;
         private System.Windows.Forms.Label ReactionsLBL;
         private System.Windows.Forms.Label PandGtrendLBL;
         private System.Windows.Forms.Button G2BUT;
@@ -729,7 +797,7 @@
         private System.Windows.Forms.Label CusQuizDivider;
         private System.Windows.Forms.Panel PastQuizes;
         private System.Windows.Forms.Label PastQuizIntro;
-        private System.Windows.Forms.Label PastQListLBL;
+        private System.Windows.Forms.Label PastQListLBL1;
         private System.Windows.Forms.Button AdvTrendBUT;
         private System.Windows.Forms.Button AdvMolBUT;
         private System.Windows.Forms.Label QStreakLBL;
@@ -744,5 +812,10 @@
         private System.Windows.Forms.Label EnterMultiResponceBUT;
         private System.Windows.Forms.Button EnterMultiBUT;
         private System.Windows.Forms.Label MultiplayerIntroBUT;
+        private System.Windows.Forms.Button CustomGOBUT;
+        private System.Windows.Forms.Label PastQListLBL5;
+        private System.Windows.Forms.Label PastQListLBL4;
+        private System.Windows.Forms.Label PastQListLBL3;
+        private System.Windows.Forms.Label PastQListLBL2;
     }
 }
